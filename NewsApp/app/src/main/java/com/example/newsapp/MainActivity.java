@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                         articleInfo += current;
                         data = inputStreamReader.read();
                     }
-                    Log.i("********* Article Info ********",articleInfo);
+                    Log.i("********* Article Info",articleInfo);
                     JSONObject jsonObject = new JSONObject(articleInfo);
 
                     if (!jsonObject.isNull("title") && !jsonObject.isNull("url")) {
